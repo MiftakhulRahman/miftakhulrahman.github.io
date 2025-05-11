@@ -571,7 +571,10 @@
 						</div>
 					</div>
 					<div class="contact-form">
-						<form id="contactForm">
+						<form
+							action="https://formspree.io/f/mgvklvjn"
+							method="POST"
+						>
 							<div class="form-group">
 								<input
 									type="text"
@@ -609,7 +612,6 @@
 							</div>
 							<button type="submit">Kirim</button>
 						</form>
-						<div id="form-message"></div>
 					</div>
 				</div>
 			</div>
@@ -664,42 +666,5 @@
 				</div>
 			</footer>
 		</div>
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				const contactForm = document.getElementById("contactForm");
-				const formMessage = document.getElementById("form-message");
-
-				contactForm.addEventListener("submit", function (e) {
-					e.preventDefault();
-
-					// Tampilkan loading state
-					formMessage.innerHTML = "<p>Mengirim pesan...</p>";
-
-					// Kumpulkan data form
-					const formData = new FormData(contactForm);
-
-					// Kirim data menggunakan fetch API
-					fetch("process_form.php", {
-						method: "POST",
-						body: formData,
-					})
-						.then((response) => response.json())
-						.then((data) => {
-							// Tampilkan pesan sukses atau error
-							if (data.status === "success") {
-								formMessage.innerHTML = `<p style="color: green;">${data.message}</p>`;
-								contactForm.reset(); // Reset form jika berhasil
-							} else {
-								formMessage.innerHTML = `<p style="color: red;">${data.message}</p>`;
-							}
-						})
-						.catch((error) => {
-							formMessage.innerHTML =
-								'<p style="color: red;">Terjadi kesalahan teknis. Silakan coba lagi nanti.</p>';
-							console.error("Error:", error);
-						});
-				});
-			});
-		</script>
 	</body>
 </html>
