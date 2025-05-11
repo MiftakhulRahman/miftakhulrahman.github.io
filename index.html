@@ -571,7 +571,7 @@
 						</div>
 					</div>
 					<div class="contact-form">
-						<form action="process_form.php" method="GET">
+						<form id="contactForm">
 							<div class="form-group">
 								<input
 									type="text"
@@ -664,21 +664,42 @@
 				</div>
 			</footer>
 		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const contactForm = document.getElementById("contactForm");
+				const formMessage = document.getElementById("form-message");
+
+				contactForm.addEventListener("submit", function (e) {
+					e.preventDefault();
+
+					// Tampilkan loading state
+					formMessage.innerHTML = "<p>Mengirim pesan...</p>";
+
+					// Kumpulkan data form
+					const formData = new FormData(contactForm);
+
+					// Kirim data menggunakan fetch API
+					fetch("process_form.php", {
+						method: "POST",
+						body: formData,
+					})
+						.then((response) => response.json())
+						.then((data) => {
+							// Tampilkan pesan sukses atau error
+							if (data.status === "success") {
+								formMessage.innerHTML = `<p style="color: green;">${data.message}</p>`;
+								contactForm.reset(); // Reset form jika berhasil
+							} else {
+								formMessage.innerHTML = `<p style="color: red;">${data.message}</p>`;
+							}
+						})
+						.catch((error) => {
+							formMessage.innerHTML =
+								'<p style="color: red;">Terjadi kesalahan teknis. Silakan coba lagi nanti.</p>';
+							console.error("Error:", error);
+						});
+				});
+			});
+		</script>
 	</body>
 </html>
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		// Cek status dari URL
-		const urlParams = new URLSearchParams(window.location.search);
-		const status = urlParams.get("status");
-		const formMessage = document.getElementById("form-message");
-
-		if (status === "success") {
-			formMessage.innerHTML =
-				'<p style="color: green;">Pesan Anda berhasil dikirim! Terima kasih telah menghubungi saya.</p>';
-		} else if (status === "error") {
-			formMessage.innerHTML =
-				'<p style="color: red;">Maaf, terjadi kesalahan. Silakan coba lagi nanti.</p>';
-		}
-	});
-</script>
