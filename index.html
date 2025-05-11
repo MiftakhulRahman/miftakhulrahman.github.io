@@ -647,3 +647,19 @@
 		</div>
 	</body>
 </html>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		// Cek status dari URL
+		const urlParams = new URLSearchParams(window.location.search);
+		const status = urlParams.get("status");
+		const formMessage = document.getElementById("form-message");
+
+		if (status === "success") {
+			formMessage.innerHTML =
+				'<p style="color: green;">Pesan Anda berhasil dikirim! Terima kasih telah menghubungi saya.</p>';
+		} else if (status === "error") {
+			formMessage.innerHTML =
+				'<p style="color: red;">Maaf, terjadi kesalahan. Silakan coba lagi nanti.</p>';
+		}
+	});
+</script>
