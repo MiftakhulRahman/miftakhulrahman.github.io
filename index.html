@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portofolio | Miftakhul Rahman</title>
+
+		<!-- Favicon -->
+		<link
+		rel="shortcut icon"
+		href="assets/favicon/favicon.ico"
+		type="image/x-icon"
+	/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font wesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<!-- Checkbox Mode Gelap -->
+		<input type="checkbox" id="dark-mode" />
+		<!-- Nav Mobile -->
+		<div class="nav-mobile">
+			<div class="nav-item">
+				<a href="#aboutme" class="nav-icon">
+					<i class="fa-solid fa-user"></i>
+					<p>Tentang Saya</p>
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="#skills" class="nav-icon">
+					<i class="fa-solid fa-pen-nib"></i>
+					<p>Skill</p>
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="#home" class="nav-icon home">
+					<i class="fa-solid fa-house"></i>
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="#porto" class="nav-icon">
+					<i class="fa-solid fa-briefcase"></i>
+					<p>Portofolio</p>
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="#kontak" class="nav-icon">
+					<i class="fa-solid fa-phone"></i>
+					<p>Kontak</p>
+				</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- Navbar -->
+			<nav>
+				<a href="#home">
+					<h1>
+						<span>M</span>r<i class="fa-solid fa-fire"></i>hman<sup
+							><i class="fa-solid fa-code"></i
+						></sup>
+					</h1>
+				</a>
+				<ul>
+					<li><a href="#aboutme">Tentang Saya</a></li>
+					<li><a href="#skills">Skill</a></li>
+					<li><a href="#porto">Portofolio</a></li>
+					<li><a href="#kontak">Kontak</a></li>
+				</ul>
+				<div class="right">
+					<div class="theme-switch">
+						<label for="dark-mode">
+							<i class="siang fa-solid fa-sun"></i>
+							<i class="malam fa-solid fa-moon"></i>
+						</label>
+					</div>
+					<a
+						href="assets/pdf/CV_MiftakhulRahman.pdf"
+						download="CV_MiftakhulRahman.pdf"
+						class="button"
+					>
+						Download CV
+					</a>
+				</div>
+			</nav>
+
+			<!-- Hero -->
+			<div class="hero" id="home">
+				<div class="h-tulisan">
+					<h5>Halo!!</h5>
+					<h1>
+						Saya Punya Pengalaman <span>Desain Kreatif</span> dan
+						<span>Web Development</span>
+					</h1>
+					<p>
+						Dengan kemampuan desain kreatif dan keahlian web
+						development yang cukup baik, saya siap mewujudkan
+						gagasan Anda menjadi website yang menarik, fungsional,
+						dan memberikan pengalaman terbaik bagi pengunjung
+					</p>
+					<div class="ht-button">
+						<button
+							onclick="window.location.href='#aboutme'"
+							type="button"
+							class="btn-1"
+						>
+							Tentang Saya
+						</button>
+						<button
+							onclick="window.location.href='#porto'"
+							type="button"
+							class="btn-2"
+						>
+							Portofolio
+							<i class="fa-solid fa-arrow-right-long"></i>
+						</button>
+					</div>
+				</div>
+				<div class="h-img">
+					<img id="siang" src="assets/img/Miftakhulr.png" alt="" />
+					<img id="malam" src="assets/img/miftakhulr-dark.png" alt="" />
+				</div>
+				<div class="h-social">
+					<p>Yuk Follow</p>
+					<div>&nbsp;</div>
+					<ul>
+						<li>
+							<a href="https://wa.me/+6285768959398">
+								<i class="fa-brands fa-whatsapp"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="https://instagram.com/m_rahman08?igshid=NTc4MTIwNjQ2YQ=="
+							>
+								<i class="fa-brands fa-instagram"></i
+							></a>
+						</li>
+						<li>
+							<a href="https://wa.me/+6285768959398">
+								<i class="fa-brands fa-facebook"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Statistic -->
+			<div class="statistics">
+				<div class="stat-item">
+					<h2>5+</h2>
+					<p>Klien yang puas</p>
+				</div>
+				<hr />
+				<div class="stat-item">
+					<h2>15+</h2>
+					<p>Projects Selesai</p>
+				</div>
+				<hr />
+				<div class="stat-item">
+					<h2>3+</h2>
+					<p>Project Besar</p>
+				</div>
+			</div>
+
+			<!-- About Me -->
+			<div class="aboutme" id="aboutme">
+				<div class="col-1">
+					<div class="a-img">
+						<img id="#siang" src="assets/svg/Miftakhulr.svg" alt="" width="300" />
+						<img id="malam" src="assets/svg/Miftakhulr_night.svg" alt="" width="300" />
+					</div>
+					<div class="nama">
+						<h1>Miftakhul Rahman</h1>
+						<p>Mahasiswa</p>
+					</div>
+					<a
+						href="https://scholar.google.com/citations?hl=id&user=fOGPEVEAAAAJ"
+						class="button"
+					>
+						Artikel Ilmiah
+					</a>
+					<a
+						href="https://github.com/MiftakhulRahman"
+						class="button"
+					>
+						Github
+					</a>
+				</div>
+				<div class="col-2">
+					<h2>Tentang Saya</h2>
+					<p>
+						Halo! Nama saya Miftakhul Rahman, dan saya adalah
+						seorang mahasiswa informatika Semester 3 Universitas
+						Nurul Huda yang bersemangat untuk menekuni ilmu di dunia
+						teknologi dan komputasi. Saya percaya bahwa teknologi
+						adalah kekuatan yang mampu membentuk masa depan kita,
+						dan itulah mengapa saya memilih untuk mengejar gelar
+						dalam bidang ini.
+						<br /><br />
+						Saya selalu tertarik pada berbagai aspek dalam dunia
+						teknologi, termasuk pengembangan perangkat lunak,
+						analisis data, dan kecerdasan buatan. Selain itu, saya
+						juga memiliki ketertarikan khusus dalam pengembangan
+						aplikasi berbasis web dan mobile, di mana saya telah
+						membuat beberapa proyek kecil yang menarik selama studi
+						saya.
+					</p>
+				</div>
+				<div class="col-3">
+					<div class="hobi-me">
+						<h3>Hobi</h3>
+						<div class="hobi-item">
+							<div class="h-icon">
+								<img src="assets/icon/Desain Web.png" alt="" />
+							</div>
+							<div class="judul">
+								<h3>Desain Webite</h3>
+								<p>Saya suka desain prototype Web</p>
+							</div>
+						</div>
+						<div class="hobi-item">
+							<div class="h-icon">
+								<img src="assets/icon/Dev Web.png" alt="" />
+							</div>
+							<div class="judul">
+								<h3>Mengembangkan Web</h3>
+								<p>Hobi sekaligus fokus utama</p>
+							</div>
+						</div>
+						<div class="hobi-item">
+							<div class="h-icon">
+								<img src="assets/icon/grafis.png" alt="" />
+							</div>
+							<div class="judul">
+								<h3>Desain Grafis</h3>
+								<p>Berawal iseng jadi suka</p>
+							</div>
+						</div>
+					</div>
+					<div class="main-app">
+						<h3>Main Apps</h3>
+						<div class="app-con">
+							<div class="app-item">
+								<div class="svg">
+									<img
+										src="assets/svg/Adobe XD CC.svg"
+										alt=""
+									/>
+								</div>
+								<p>Adobe XD</p>
+							</div>
+							<div class="app-item">
+								<div class="svg">
+									<img
+										src="assets/svg/Figma-logo.svg"
+										alt=""
+										height="30"
+									/>
+								</div>
+								<p>Figma</p>
+							</div>
+							<div class="app-item">
+								<div class="svg">
+									<img
+										src="assets/svg/Adobe Illustrator CC.svg"
+										alt=""
+										style="width: 25px"
+									/>
+								</div>
+								<p>Adobe Illustrator</p>
+							</div>
+							<div class="app-item">
+								<div class="svg">
+									<img
+										src="assets/svg/Adobe Photoshop CC.svg"
+										alt=""
+									/>
+								</div>
+								<p>Adobe Photoshop</p>
+							</div>
+							<div class="app-item">
+								<div class="svg">
+									<img
+										src="assets/svg/CorelDraw_logo.svg"
+										alt=""
+									/>
+								</div>
+								<p>CorelDraw</p>
+							</div>
+							<div class="app-item">
+								<div class="svg">
+									<img
+										src="assets/svg/Canva.svg"
+										alt=""
+										style="width: 60px"
+									/>
+								</div>
+								<p>Canva</p>
+							</div>
+							<div class="app-item">
+								<div class="svg">
+									<img
+										src="assets/svg/Visual Studio Code.svg"
+										alt=""
+									/>
+								</div>
+								<p>Visual Studio Code</p>
+							</div>
+							<div class="app-item">
+								<div class="svg">
+									<img
+										src="assets/svg/WordpPess Icon.svg"
+										alt=""
+									/>
+								</div>
+								<p>Wordpress</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- My Skills -->
+			<div class="skills" id="skills">
+				<div class="h-tulisan">
+					<h5>My Skills</h5>
+					<h1>
+						Mengapa saya harus <span>terlibat</span> di
+						<span>project</span> anda selanjutnya?
+					</h1>
+					<p>
+						saya punya keahlian yang dapat membantu anda
+						menyelesaikan project dengan cepat
+					</p>
+				</div>
+				<div class="keahlian">
+					<div class="keahlian-item col-1">
+						<div class="icon">
+							<i class="fa-solid fa-window-restore"></i>
+						</div>
+						<h2>Desain Web</h2>
+						<p>Saya punya desain dengan konsep unik dan kreatif</p>
+					</div>
+					<div class="keahlian-item col-3">
+						<div class="icon">
+							<i class="fa-brands fa-uikit"></i>
+						</div>
+						<h2>Desain Grafis</h2>
+						<p>Membuat desain elegan dengan adobe apps</p>
+					</div>
+					<div class="keahlian-item col-2">
+						<div class="icon">
+							<i class="fa-solid fa-object-group"></i>
+						</div>
+						<h2>Development Web</h2>
+						<p>Membuat web impian customers</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- portofolio -->
+			<div class="porto" id="porto">
+				<div class="h-tulisan">
+					<h5>Portofolio</h5>
+					<h1>
+						Apa yang saya
+						<span>buat?</span>
+					</h1>
+					<p>
+						Saya membuat prototype web dengan Adobe XD dan
+						mengembangkan website dengan Wordpress
+					</p>
+				</div>
+				<div class="porto1">
+					<div class="portofolio-item">
+						<div class="p-title">
+							<p>Desain Web Inf</p>
+						</div>
+						<img src="assets/img/p-1.png" alt="portofolio" />
+						<div class="keterangan">
+							<h3>Desain Website Informatika Adobe XD</h3>
+							<p>
+								Ini adalah project desain prototype dari Mata
+								kuliah Interaksi Manusia dan komputer dibuat
+								menggunakan software Adobe XD
+							</p>
+						</div>
+					</div>
+					<div class="portofolio-item">
+						<div class="p-title">
+							<p>Desain Web Wisata</p>
+						</div>
+						<img src="assets/img/p-2.png" alt="portofolio" />
+						<div class="keterangan">
+							<h3>
+								Desain Website Travelin (Traveling) Adobe XD
+							</h3>
+							<p>
+								Ini adalah project UAS desain prototype dari
+								Mata kuliah Interaksi Manusia dan komputer
+								dibuat menggunakan software Adobe XD
+							</p>
+						</div>
+					</div>
+					<div class="portofolio-item">
+						<div class="p-title">
+							<p>Desain Banner</p>
+						</div>
+						<img src="assets/img/p-4.jpg" alt="portofolio" />
+						<div class="keterangan">
+							<h3>Desain Banner kuliah Tamu Informatika</h3>
+							<p>
+								Saya membuat desain banner untuk kuliah tamu
+								informatika menggunakan adobe Illustrator dan
+								sedikit bantuan adobe Photoshop untuk mengolah
+								bagian foto
+							</p>
+						</div>
+					</div>
+					<div class="portofolio-item">
+						<div class="p-title">
+							<p>Web Desa Wordpress</p>
+						</div>
+						<img src="assets/img/p-5.png" alt="portofolio" />
+						<div class="keterangan">
+							<h3>Mengembangkan Website Desa Dengan Wordpress</h3>
+							<p>
+								Ini adalah project penegembangan website mandiri
+								dengan wordpress, menjadi project website
+								terbesar saya karena semua page di sempurnakan
+								layaknya website desa profesional dan semua
+								tampilan interface, layout, warna, isi
+								berdasarkan ide sendiri.
+							</p>
+						</div>
+					</div>
+					<div class="portofolio-item">
+						<div class="p-title">
+							<p>Desain Pamflet</p>
+						</div>
+						<img src="assets/img/p-6.png" alt="portofolio" />
+						<div class="keterangan">
+							<h3>Desain Pamflet</h3>
+							<p>
+								Ini adalah salah satu desain pamflet saya, ini
+								dibuat untuk lomba peringatan hari kartini
+								Universitas Nurul Huda.
+							</p>
+						</div>
+					</div>
+					<div class="portofolio-item">
+						<div class="p-title">
+							<p>Web Download Sertifikat</p>
+						</div>
+						<img src="assets/img/p-7.png" alt="portofolio" />
+						<div class="keterangan">
+							<h3>Webiste Donwload Sertifikat</h3>
+							<p>
+								Ini adalah project mandiri saya membuat website
+								untuk mendownload sertifikat menggunakan PHP
+								native, dibuat untuk kebutuhan pembagian
+								sertifikat kuliah tamu informatika, mekanismenya
+								yaitu mahasiswa memasukan nim lalu menekan unduh
+								makan sertifikat mahasiswa tersebut otomatis
+								terunduh.
+							</p>
+						</div>
+					</div>
+					<div class="portofolio-item">
+						<div class="p-title">
+							<p>Web Mr.id Store</p>
+						</div>
+						<img src="assets/img/p-8.png" alt="portofolio" />
+						<div class="keterangan">
+							<h3>Website penjualan paket parabola</h3>
+							<p>
+								Ini adalah project web yang saya buat dengan
+								panduan dari video Youtube Web Programming
+								Unpas, saya buat untuk usaha saya dulu yakni
+								menjual paket parabola (Pay TV).
+							</p>
+						</div>
+					</div>
+					<div class="portofolio-item">
+						<div class="p-title">
+							<p>Web TImer</p>
+						</div>
+						<img src="assets/img/p-9.png" alt="portofolio" />
+						<div class="keterangan">
+							<h3>Website Timer </h3>
+							<p>
+								Ini adalah project web yang saya buat khusus untuk kebutuhan hitung mundur (timer) lomba desain poster Informatika CUP
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contact -->
+			<div class="contact" id="kontak">
+				<div class="h-tulisan">
+					<h5>Kontak</h5>
+					<h1>
+						Mari diskusi tentang
+						<span>Project</span> Selanjutnya
+					</h1>
+					<p>
+						Mari kita buat sesuatu yang baru, berbeda dan lebih
+						bermakna atau memebuat sesuatu yang lebih menarik
+					</p>
+				</div>
+				<div class="contact-container">
+					<div class="contact-info">
+						<div class="info-item">
+							<div class="icon">
+								<i class="fa-solid fa-phone"></i>
+							</div>
+							<div class="details">
+								<p>No HP</p>
+								<p>+6285768959398</p>
+							</div>
+						</div>
+						<div class="info-item">
+							<div class="icon">
+								<i class="fa-solid fa-envelope"></i>
+							</div>
+							<div class="details">
+								<p>Email</p>
+								<p>miftakhul03@gmail.com</p>
+							</div>
+						</div>
+						<div class="info-item">
+							<div class="icon">
+								<i class="fa-solid fa-location-dot"></i>
+							</div>
+							<div class="details">
+								<p>Alamat</p>
+								<p>Indonesia.</p>
+							</div>
+						</div>
+					</div>
+					<div class="contact-form">
+						<form>
+							<div class="form-group">
+								<input
+									type="text"
+									placeholder="Nama Lengkap"
+									required
+								/>
+								<input
+									type="email"
+									placeholder="Email"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="tel"
+									placeholder="No.HP"
+									required
+								/>
+								<input
+									type="text"
+									placeholder="Alamat"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<textarea
+									placeholder="Pesan"
+									required
+								></textarea>
+							</div>
+							<button type="submit">Kirim</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer>
+				<hr class="atas" />
+				<div class="fot">
+					<h1>
+						<span>M</span>r<i class="fa-solid fa-fire"></i>hman<sup
+							><i class="fa-solid fa-code"></i
+						></sup>
+					</h1>
+					<div class="link">
+						<ul class="nav-f">
+							<li><a href="#skills">Skill</a></li>
+							<li><a href="#aboutme">Tentang Saya</a></li>
+							<li><a href="#porto">Portofolio</a></li>
+							<li><a href="#kontak">Kontak</a></li>
+						</ul>
+						<ul class="sosmed-f">
+							<li>
+								<a href="https://wa.me/+6285768959398"
+									><i class="fa-brands fa-whatsapp"></i
+								></a>
+							</li>
+							<li>
+								<a
+									href="https://instagram.com/m_rahman08?igshid=NTc4MTIwNjQ2YQ=="
+								>
+									<i class="fa-brands fa-instagram"></i
+								></a>
+							</li>
+							<li>
+								<a
+									href="https://www.facebook.com/miftakhul.rahman.75?mibextid=ZbWKwL"
+								>
+									<i class="fa-brands fa-facebook"></i
+								></a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/@kabarnm4397">
+									<i class="fa-brands fa-youtube"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="copy">
+					Copyright <i class="fa-regular fa-copyright"></i>2024 |
+					Miftakhul Rahman
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
