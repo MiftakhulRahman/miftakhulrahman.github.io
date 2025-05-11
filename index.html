@@ -7,10 +7,10 @@
 
 		<!-- Favicon -->
 		<link
-		rel="shortcut icon"
-		href="assets/favicon/favicon.ico"
-		type="image/x-icon"
-	/>
+			rel="shortcut icon"
+			href="assets/favicon/favicon.ico"
+			type="image/x-icon"
+		/>
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/style.css" />
@@ -135,7 +135,11 @@
 				</div>
 				<div class="h-img">
 					<img id="siang" src="assets/img/Miftakhulr.png" alt="" />
-					<img id="malam" src="assets/img/miftakhulr-dark.png" alt="" />
+					<img
+						id="malam"
+						src="assets/img/miftakhulr-dark.png"
+						alt=""
+					/>
 				</div>
 				<div class="h-social">
 					<p>Yuk Follow</p>
@@ -184,8 +188,18 @@
 			<div class="aboutme" id="aboutme">
 				<div class="col-1">
 					<div class="a-img">
-						<img id="#siang" src="assets/svg/Miftakhulr.svg" alt="" width="300" />
-						<img id="malam" src="assets/svg/Miftakhulr_night.svg" alt="" width="300" />
+						<img
+							id="#siang"
+							src="assets/svg/Miftakhulr.svg"
+							alt=""
+							width="300"
+						/>
+						<img
+							id="malam"
+							src="assets/svg/Miftakhulr_night.svg"
+							alt=""
+							width="300"
+						/>
 					</div>
 					<div class="nama">
 						<h1>Miftakhul Rahman</h1>
@@ -197,10 +211,7 @@
 					>
 						Artikel Ilmiah
 					</a>
-					<a
-						href="https://github.com/MiftakhulRahman"
-						class="button"
-					>
+					<a href="https://github.com/MiftakhulRahman" class="button">
 						Github
 					</a>
 				</div>
@@ -505,9 +516,11 @@
 						</div>
 						<img src="assets/img/p-9.png" alt="portofolio" />
 						<div class="keterangan">
-							<h3>Website Timer </h3>
+							<h3>Website Timer</h3>
 							<p>
-								Ini adalah project web yang saya buat khusus untuk kebutuhan hitung mundur (timer) lomba desain poster Informatika CUP
+								Ini adalah project web yang saya buat khusus
+								untuk kebutuhan hitung mundur (timer) lomba
+								desain poster Informatika CUP
 							</p>
 						</div>
 					</div>
@@ -558,15 +571,17 @@
 						</div>
 					</div>
 					<div class="contact-form">
-						<form>
+						<form action="process_form.php" method="GET">
 							<div class="form-group">
 								<input
 									type="text"
+									name="name"
 									placeholder="Nama Lengkap"
 									required
 								/>
 								<input
 									type="email"
+									name="email"
 									placeholder="Email"
 									required
 								/>
@@ -574,23 +589,27 @@
 							<div class="form-group">
 								<input
 									type="tel"
+									name="phone"
 									placeholder="No.HP"
 									required
 								/>
 								<input
 									type="text"
+									name="address"
 									placeholder="Alamat"
 									required
 								/>
 							</div>
 							<div class="form-group">
 								<textarea
+									name="message"
 									placeholder="Pesan"
 									required
 								></textarea>
 							</div>
 							<button type="submit">Kirim</button>
 						</form>
+						<div id="form-message"></div>
 					</div>
 				</div>
 			</div>

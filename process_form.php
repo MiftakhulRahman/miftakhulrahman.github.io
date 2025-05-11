@@ -1,14 +1,15 @@
 <?php
+// Ini adalah process_form.php dimodifikasi untuk metode GET
 // Konfigurasi
 $to = "miftakhul03@gmail.com"; // Email tujuan
 $subject = "Pesan Baru dari Website Portofolio";
 
-// Tangkap data form
-$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
-$address = filter_var($_POST['address'], FILTER_SANITIZE_STRING);
-$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+// Tangkap data form dari GET
+$name = filter_var($_GET['name'], FILTER_SANITIZE_STRING);
+$email = filter_var($_GET['email'], FILTER_SANITIZE_EMAIL);
+$phone = filter_var($_GET['phone'], FILTER_SANITIZE_STRING);
+$address = filter_var($_GET['address'], FILTER_SANITIZE_STRING);
+$message = filter_var($_GET['message'], FILTER_SANITIZE_STRING);
 
 // Validasi data
 if(empty($name) || empty($email) || empty($message)) {
